@@ -1,0 +1,36 @@
+{
+  "name": "burrito",
+  "version": "0.0.0",
+  "authors": [
+    "Robert Velton <robert.velton@evisions.com>",
+    "Trevor Harwell <trevor.harwell@evisions.com>",
+    "Kevin 'Harry' Dinicola <kevin.dinicola@evisions.com>",
+    "Johnny Zarate <johnny.zarate@evisions.com>"
+  ],
+  "description": "Client side template string-to-dom parser",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests",
+    "karma.conf.js",
+    "Gruntfile.js",
+    ".bowerrc",
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".travis.yml"
+  ],
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "handlebars": "~1.3.0",
+    "underscore": "~1.6.0",
+    "requirejs": "~2.1.11"
+  }
+}
