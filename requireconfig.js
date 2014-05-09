@@ -19,6 +19,7 @@ require.config({
     chai       : './libs/chai/chai',
     handlebars : './libs/handlebars/handlebars',
     underscore : './libs/underscore/underscore',
+    jquery     : './libs/jquery/jquery',
     burrito    : './src/burrito'
   },
 
@@ -28,9 +29,9 @@ require.config({
     }
   },
 
-  deps: ['chai', 'burrito', 'handlebars'].concat(tests),
+  deps: ['chai', 'burrito'].concat(tests),
 
-  callback: function(chai, Burrito, Handlebars) {
+  callback: function(chai, Burrito) {
     assert  = chai.assert;
     expect  = chai.expect;
     should  = chai.should();

@@ -17,6 +17,7 @@ module.exports = function(config) {
       { pattern: 'libs/**/*.js', included: false, watch : false },
       { pattern: 'src/**/*.js', included: false },
       { pattern: 'templates/**/*.hbs', included: false },
+      { pattern: 'templates.js', included: false },
       'requireconfig.js'
     ],
 

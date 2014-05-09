@@ -1,1 +1,6 @@
-<div>hello world</div>
+<div {{$ this}}>
+  hello world
+  {{#each children}}
+    {{> child}}
+  {{/each}}
+</div>
