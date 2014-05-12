@@ -82,7 +82,15 @@ define([
       expect(children[0]).to.equal(data.children[0]);
       expect(children[1]).to.equal(data.children[1]);
 
-    }); 
+    });
+
+    it('SVG should render correctly', function() {
+      var data = { bind: 'me' };
+
+      var text = $(Burrito.template('svg', data)).find('.my-test-class');
+
+      expect(text.burrito()).to.equal(data);
+    });
 
   });
 

@@ -133,6 +133,14 @@ define([
         fragment.appendChild(div.firstChild);
       }
 
+      if (fragment.childNodes.length > 1) {
+
+        return fragment.childNodes;
+      } else if (fragment.childNodes.length == 1) {
+
+        return fragment.childNodes[0];
+      }
+
       return fragment;
     },
 

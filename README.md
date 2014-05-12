@@ -3,9 +3,7 @@ Burrito
 
 Client side template string-to-dom parser with data attaching.
 
-Tested with:
-
-* Handlebars.js
+We love handlebars.  But they lack functionality that we think is extremely useful.  Namely 
 
 ```javascript
 // Wrap your templates with Burrito
@@ -18,4 +16,13 @@ Burrito.wrap(Templates)
     .utensil(function(bind) {
       Handlebars.registerHelper('$', bind);
     });
+
+
+var el = Burrito.template('template.name', { my: 'data' });
+
+Burrito.data(el); // -> { my: 'data' }
 ```
+
+Tested with:
+
+* Handlebars
